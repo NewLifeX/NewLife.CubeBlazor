@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\NewLife.CubeBlazor.Razor.props" />
-</Project>
