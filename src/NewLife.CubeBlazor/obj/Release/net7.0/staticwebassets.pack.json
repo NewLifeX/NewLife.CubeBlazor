@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\bin\\Release\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\obj\\Release\\net7.0\\build-gz\\wyZdCLCK.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\obj\\Release\\net7.0\\scopedcss\\bundle\\NewLife.CubeBlazor.styles.css",
+      "PackagePath": "staticwebassets\\NewLife.CubeBlazor.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.NewLife.CubeBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.NewLife.CubeBlazor.props",
+      "PackagePath": "build\\NewLife.CubeBlazor.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.NewLife.CubeBlazor.props",
+      "PackagePath": "buildMultiTargeting\\NewLife.CubeBlazor.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.NewLife.CubeBlazor.props",
+      "PackagePath": "buildTransitive\\NewLife.CubeBlazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

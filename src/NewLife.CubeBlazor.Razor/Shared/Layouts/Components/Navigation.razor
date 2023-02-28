@@ -1,0 +1,162 @@
+@namespace NewLife.CubeBlazor.Razor.Shared.Layouts
+@inherits CubeComponentBase
+@inject GlobalConfig GlobalConfig
+@inject ILogger<Navigation> Logger
+
+<MNavigationDrawer App
+                   Class="navigation"
+                   Permanent
+                   MiniVariantWidth="96"
+                   Width="300"
+                   MiniVariant="GlobalConfig.Mini">
+
+    <div style="height:96px;"
+         class="d-flex justify-space-around align-center px-3">
+        @if (GlobalConfig.Mini)
+        {
+            <img height="40" width="40" src="@MiniLogo" alt="mini_log"
+             style="cursor: pointer" @onclick="NavigateToIndex" />
+        }
+        else
+        {
+            <img width="200" src="@Logo" alt="logo"
+             style="cursor: pointer" @onclick="NavigateToIndex" />
+             <MChip Class="ma-2" Small
+                Color="primary">               
+            </MChip>
+        }
+    </div>
+
+    <MList Nav Linkage Class="pa-6 subtitle2">
+        @foreach (var nav in Items!)
+        {
+            if (!nav.HasChildren)
+            {
+                <STooltip Disabled="!GlobalConfig.Mini">
+                    <ActivatorContent Context="tooltipContext">
+                        <SListItem Medium Class="mb-2 rounded-2" ActiveClass="primary" Href="@nav.Url" @attributes="@tooltipContext.Attrs" Exact="Exact">
+                            <ItemContent>
+                                <MListItemIcon>
+                                    <MIcon Dense Style="margin-left:6px" Color="@(context.Active ? "white" : "regular3--text")">@nav.Icon</MIcon>
+                                </MListItemIcon>
+                                <MListItemContent>
+                                    <div class="ml-1 text-truncate @(context.Active ? "white--text" : "regular2--text")">
+                                        @T(nav.Name)
+                                    </div>
+                                </MListItemContent>
+                            </ItemContent>
+                        </SListItem>
+                    </ActivatorContent>
+                    <ChildContent>
+                        @T(nav.Name)
+                    </ChildContent>
+                </STooltip>
+            }
+            else
+            {
+                <MMenu Disabled="!GlobalConfig.Mini" OffsetY OpenOnHover CloseOnContentClick="false"
+               ContentClass="white pa-2 subtitle2"
+               MinWidth="250">
+                    <ActivatorContent Context="menuContext">
+                        <MListGroup Group="@GenGroup(nav.Children)"
+                            NoAction
+                            ActiveClass="primary--text"
+                            AppendIcon="mdi-menu-down"
+                            @attributes="@menuContext.Attrs">
+                            <ActivatorContent>
+                                <MListItemContent>
+                                    <div class="ml-1 text-truncate regular2--text">@T(nav.Name)</div>
+                                </MListItemContent>
+                            </ActivatorContent>
+                            <PrependIconContent>
+                                <MIcon Dense Style="margin-left: 6px">@nav.Icon</MIcon>
+                            </PrependIconContent>
+                            <ChildContent>
+                                <NavItems Data="@nav" Class="@(GlobalConfig.Mini ? "" : "ml-6")"></NavItems>
+                            </ChildContent>
+                        </MListGroup>
+                    </ActivatorContent>
+                    <ChildContent>
+                        <MList Nav Linkage>
+                            <NavItems Data="@nav" Class="@(GlobalConfig.Mini ? "" : "ml-6")"></NavItems>
+                        </MList>
+                    </ChildContent>
+                </MMenu>
+            }
+        }
+    </MList>
+</MNavigationDrawer>
+
+<SButton Icon
+         Medium
+         Class="nav-trigger white"
+         Style="@($"{(GlobalConfig.Mini ? "left:76px;" : "left:280px;")}")"
+         OnClick="() => GlobalConfig.Mini = !GlobalConfig.Mini">
+    <MIcon Color="primary">
+        @(GlobalConfig.Mini ? "mdi-chevron-right" : "mdi-chevron-left")
+    </MIcon>
+</SButton>
+
+@code {
+
+    [Parameter]
+    public string? DefaultRoute { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public List<Nav>? Items { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public string? Logo { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public string? MiniLogo { get; set; }
+
+    [Parameter]
+    public bool Exact { get; set; } = true;
+
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        Items ??= new List<Nav>();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private List<string> GenGroup(List<Nav> navs)
+    {
+        if (!navs.Any())
+        {
+            return new List<string>();
+        }
+
+        List<string> groups = new();
+
+        foreach (var menu in navs)
+        {
+            groups.AddRange(GenGroup(menu.Children));
+
+            if (string.IsNullOrEmpty(menu.Url)) continue;
+
+            groups.Add(menu.Url);
+        }
+
+        return groups;
+    }
+
+    private void NavigateToIndex()
+    {
+        NavigationManager.NavigateTo(Items!.GetDefaultRoute());
+    }
+}

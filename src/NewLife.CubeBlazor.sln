@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewLife.CubeBlazor", "NewLife.CubeBlazor\NewLife.CubeBlazor.csproj", "{F2A39451-27E2-4F30-9FEF-8D5D6EF15E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewLife.CubeBlazor.Razor", "NewLife.CubeBlazor.Razor\NewLife.CubeBlazor.Razor.csproj", "{BE9D1402-1331-46FF-A610-A6214AD7ACFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2A39451-27E2-4F30-9FEF-8D5D6EF15E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A39451-27E2-4F30-9FEF-8D5D6EF15E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A39451-27E2-4F30-9FEF-8D5D6EF15E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A39451-27E2-4F30-9FEF-8D5D6EF15E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9D1402-1331-46FF-A610-A6214AD7ACFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9D1402-1331-46FF-A610-A6214AD7ACFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9D1402-1331-46FF-A610-A6214AD7ACFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9D1402-1331-46FF-A610-A6214AD7ACFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8C7FD11-4707-44C4-8306-A9B265ACAEA3}
+	EndGlobalSection
+EndGlobal

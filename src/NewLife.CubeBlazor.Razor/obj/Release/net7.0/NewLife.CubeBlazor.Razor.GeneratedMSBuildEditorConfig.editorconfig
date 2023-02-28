@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NewLife.CubeBlazor.Razor
+build_property.RootNamespace = NewLife.CubeBlazor.Razor
+build_property.ProjectDir = C:\Users\zsygz\Documents\GitHub\NewLife.CubeBlazor\src\NewLife.CubeBlazor.Razor\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\zsygz\Documents\GitHub\NewLife.CubeBlazor\src\NewLife.CubeBlazor.Razor
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/Shared/Layouts/Components/Breadcrumbs.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcQ29tcG9uZW50c1xCcmVhZGNydW1icy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/Shared/Layouts/Components/Languages.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcQ29tcG9uZW50c1xMYW5ndWFnZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/Shared/Layouts/Components/Navigation.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcQ29tcG9uZW50c1xOYXZpZ2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/Shared/Layouts/Components/NavItems.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcQ29tcG9uZW50c1xOYXZJdGVtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/Shared/Layouts/Components/NoUserLogoutConfirm.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcQ29tcG9uZW50c1xOb1VzZXJMb2dvdXRDb25maXJtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/Shared/Layouts/SLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcU0xheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zsygz/Documents/GitHub/NewLife.CubeBlazor/src/NewLife.CubeBlazor.Razor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

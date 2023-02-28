@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor.Razor\\wwwroot\\css\\masa-blazor.min.css",
+      "PackagePath": "staticwebassets\\css\\masa-blazor.min.css"
+    },
+    {
+      "Id": "C:\\Users\\zsygz\\Documents\\GitHub\\NewLife.CubeBlazor\\src\\NewLife.CubeBlazor.Razor\\wwwroot\\css\\mobile.css",
+      "PackagePath": "staticwebassets\\css\\mobile.css"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.NewLife.CubeBlazor.Razor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.NewLife.CubeBlazor.Razor.props",
+      "PackagePath": "build\\NewLife.CubeBlazor.Razor.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.NewLife.CubeBlazor.Razor.props",
+      "PackagePath": "buildMultiTargeting\\NewLife.CubeBlazor.Razor.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.NewLife.CubeBlazor.Razor.props",
+      "PackagePath": "buildTransitive\\NewLife.CubeBlazor.Razor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

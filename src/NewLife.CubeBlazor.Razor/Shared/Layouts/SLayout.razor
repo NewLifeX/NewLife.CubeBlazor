@@ -1,0 +1,37 @@
+@namespace NewLife.CubeBlazor.Razor.Shared.Layouts
+<CascadingValue Value="this" IsFixed>
+    <CascadingValue Value="I18n">
+        <MApp Class="masa masa-stack-components">
+            <MErrorHandler ErrorContent=ErrorContent OnErrorHandleAsync=ErrorHandleAsync>
+            <MAppBar App
+                     Class="mx-6"
+                     Elevation="0"
+                     Height="96">
+                @if (ShowBreadcrumbs)
+                {
+                    <Breadcrumbs FlattenedNavs="FlattenedAllNavs" Style="padding-bottom: 0px !importance;"></Breadcrumbs>
+                }
+                
+                <MSpacer />
+                <Languages OnChange="() => { }" />
+                <MSheet class="d-flex align-center justify-space-between rounded-6 pa-1 mr-n3" Width="100">
+                    @*<Notification />
+                    <User />*@
+                </MSheet>
+            </MAppBar>
+
+            <Navigation Items="NavItems"
+                        Logo="@Logo"
+                        MiniLogo="@MiniLogo"
+                        Exact="Exact" />
+
+            <MMain class="masa-main">
+                <div class="@($"px-6 pb-6 max-width full-height {@Class}")" style="@Style">
+                    @ChildContent
+                </div>
+            </MMain>
+            </MErrorHandler>
+            <NoUserLogoutConfirm @bind-Visible="_noUserLogoutConfirm" />
+        </MApp>
+    </CascadingValue>
+</CascadingValue>
